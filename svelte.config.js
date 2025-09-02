@@ -9,7 +9,8 @@ const config = {
 	kit: {
 		adapter: adapter({
 			precompress: false,
-			fallback: 'index.html'
+			fallback: 'index.html',
+			pages: 'docs'
 		})
 	}
 };
