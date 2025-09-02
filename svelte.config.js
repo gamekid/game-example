@@ -11,7 +11,10 @@ const config = {
 			precompress: false,
 			fallback: 'index.html',
 			pages: 'docs'
-		})
+		}),
+		paths: {
+			base: "/game-example"
+		}
 	}
 };
 

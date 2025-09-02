@@ -15,7 +15,7 @@ if (now - lastMessageTime > MESSAGE_INTERVAL_MS) {
 }
 
 export default defineConfig({
-    base: './',
+    base: '',
     plugins: [
         sveltekit(),
     ],
