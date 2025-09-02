@@ -9,11 +9,10 @@ const config = {
 	kit: {
 		adapter: adapter({
 			precompress: false,
-			fallback: 'index.html',
-			pages: 'docs'
+			fallback: 'index.html'
 		}),
 		paths: {
-			base: "/game-example"
+			base: "/game-example/build"
 		}
 	}
 };
