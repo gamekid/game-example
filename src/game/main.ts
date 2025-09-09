@@ -24,8 +24,13 @@ const config: Phaser.Types.Core.GameConfig = {
 
 const StartGame = (parent: string) => {
 
-    return new Game({ ...config, parent });
+    const game = new Game({ ...config, parent });
 
+    const currentLevel = localStorage.getItem('currentLevel') ?? 0;
+
+    game.registry.set('currentLevel', currentLevel);
+
+    return game;
 }
 
 export default StartGame;
